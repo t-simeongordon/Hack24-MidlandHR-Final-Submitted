@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:id="@+id/hearder"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#940000"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/profile_pic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:background="@drawable/pp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="bio"
+        android:id="@+id/bio"
+        android:layout_below="@+id/profile_pic"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:text="First Name:"
+        android:id="@+id/first_name"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/bio"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="---"
+        android:id="@+id/first_name_json"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/profile_pic"
+        android:layout_toEndOf="@+id/profile_pic"
+        android:layout_alignTop="@+id/first_name"
+        />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:text="Last Name:"
+        android:id="@+id/last_name"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/first_name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="---"
+        android:id="@+id/last_name_json"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/profile_pic"
+        android:layout_toEndOf="@+id/profile_pic"
+        android:layout_below="@+id/first_name_json"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:text="Job Title:"
+        android:id="@+id/job_title"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/last_name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="---"
+        android:id="@+id/job_title_json"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/profile_pic"
+        android:layout_toEndOf="@+id/profile_pic"
+        android:layout_below="@+id/last_name_json"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:text="Age:"
+        android:id="@+id/user_age"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/job_title"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="---"
+        android:id="@+id/user_age_json"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/profile_pic"
+        android:layout_toEndOf="@+id/profile_pic"
+        android:layout_below="@+id/job_title_json"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:text="Skill:"
+        android:id="@+id/user_skills"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/user_age_json"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="Leadership"
+        android:id="@+id/user_skills_json"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/profile_pic"
+        android:layout_toEndOf="@+id/profile_pic"
+        android:layout_below="@+id/user_age_json"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:text="Location:"
+        android:id="@+id/user_location"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/user_skills"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="Nottingham"
+        android:id="@+id/user_location_json"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/profile_pic"
+        android:layout_toEndOf="@+id/profile_pic"
+        android:layout_below="@+id/user_skills"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:text="Location:"
+        android:id="@+id/user_rating"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/user_location"
+        android:layout_marginTop="10dp"/>
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar"
+        android:layout_toRightOf="@+id/user_rating"
+        android:layout_toEndOf="@+id/user_rating"
+        android:layout_below="@+id/user_location_json"
+        android:layout_marginTop="10dp"/>
+
+
+
+
+</RelativeLayout>
